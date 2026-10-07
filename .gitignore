@@ -1,0 +1,36 @@
+# === Кэш Python и байт-код ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# === Виртуальные окружения (Virtual Environments) ===
+# Игнорируем стандартные папки виртуальных сред, чтобы не загружать гигабайты зависимостей
+.venv/
+venv/
+ENV/
+env/
+
+# === Системные файлы macOS (так как вы на Mac) ===
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# === Настройки VS Code ===
+.vscode/
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# === Переменные окружения и секреты ===
+# Сюда обычно складывают пароли и токены, их нельзя пушить в Git
+.env
+.env.local
